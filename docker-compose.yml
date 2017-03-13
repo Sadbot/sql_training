@@ -1,0 +1,8 @@
+version: '2'
+services:
+  db:
+    image: postgres
+    volumes:
+      - ./dump.sql:/sql/dump.sql
+    ports:
+      - "5432:5432"
